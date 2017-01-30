@@ -1,0 +1,39 @@
+{
+  "fileBaseUrl" : "* OLD BASE URL (IF ABSOLUTE, LEAVE BLANK)*",
+  "mongoDB" : {
+    "uri" : "mongodb://"
+  },
+  "aws" : {
+    "accessKey" : "* YOUR AWS ACCESS KEY *",
+    "secretKey" : "* YOUR AWS SECRET KEY *",
+    "s3_bucket" : "* YOUR AWS S3 BUCKET *"
+  },
+  "collections" : {
+    "User" : {
+      "profileImage" : {
+        "mimeType" : "image/jpeg"
+      },
+      "profileThumb" : {
+        "mimeType" : "image/jpeg"
+      }
+    },
+    "Post" : {
+      "imageFile" : {
+        "mimeType" : "image/png"
+      },
+      "videoFile" : {
+        "mimeType" : "video/mp4"
+      },
+      "zipFile" : {
+        "mimeType" : "application/zip"
+      }
+    }
+  },
+  "projection" : {
+    "profileImage" : true,
+    "profileThumb" : true,
+    "imageFile" : true,
+    "videoFile" : true,
+    "zipFile" : true
+  }
+}
